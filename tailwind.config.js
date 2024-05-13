@@ -12,7 +12,9 @@ export default {
         'rubik': ["Rubik", 'open sans'], 
       },
       colors: {
-        'green-hero': "#395C4D"
+        'green-hero': "#395C4D",
+        'green-light': "#F6FBF9",
+        'green-primary': "#A3B938",
       },
     },
   },

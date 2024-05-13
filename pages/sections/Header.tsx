@@ -15,7 +15,9 @@ function Header() {
     <header 
       className='bg-gradient-to-br from-[#395C4D] to-[#132D1F] h-screen relative'>
       <img className='absolute top-0 left-0 -z-0 w-full h-full' src={bgHero} alt="" />
-      <img className='absolute top-[35vh] left-0 -z-0 w-full' src={figuresHero} alt="" />
+      <div className="absolute top-0 left-0 -z-0 flex items-end h-full w-full">
+        <img className='w-full' src={figuresHero} alt="" />
+      </div>
       <div className="relative z-10 flex flex-col items-center justify-start text-white py-10">
         <Navbar items={sections}/>
         <div className="text-center pt-20">
