@@ -1,4 +1,6 @@
 import React from "react";
+import img1 from '../../public/image-1-markethink.png'
+import ButtonCTA from "../components/ButtonCTA";
 
 function Services() {
   const servicesList = [
@@ -28,9 +30,9 @@ function Services() {
       <div className="max-w-6xl flex flex-col my-14">
         <div className="flex">
           <div className="w-1/2 space-y-8">
-            <h2 className="font-semibold text-4xl text-[#253D32]">We’re Strategic Digital <br /> Marketing Agency</h2>
+            <h2 className="title-section">We’re Strategic Digital <br /> Marketing Agency</h2>
             <p className="text-gray-500 text-xl w-[65%]">We’ve created a full-stack structure for our working workflow processe, were from the funny the century initial all made, have spare to negatives </p>
-            <button className="text-green-primary font-medium underline text-xl">See more</button>
+            <button className="link-section">See more</button>
           </div>
           <div className="w-1/2 flex flex-wrap">
             {servicesList.map(service => 
@@ -42,7 +44,17 @@ function Services() {
             )}
           </div>
         </div>
-        <div className=""></div>
+        <div className="flex">
+          <div className="w-1/2">
+            <img src={img1} alt="" />
+          </div>
+          <div className="w-1/2 flex flex-col justify-center items-start space-y-4 pl-10">
+            <h2 className="title-section">Increase Business on <br /> Social Media Reach</h2>
+            <p className="text-gray-500 text-xl w-[65%]">Using our network of industry influencers, we help promote your content</p>
+            <ButtonCTA text="Get started"/>
+          </div>
+
+        </div>
       </div>
     </section>
   );

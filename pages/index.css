@@ -9,3 +9,11 @@
 .btn-navbar{
   @apply border-[1px] border-[#C2E463] px-6 py-2 rounded-full
 }
+
+.title-section{
+  @apply font-semibold text-4xl text-[#253D32];
+}
+
+.link-section{
+  @apply text-green-primary font-medium underline text-xl;
+}
